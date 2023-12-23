@@ -1,7 +1,9 @@
 // initial packages
-const express=require('express')
+const express=require('express');
 const router=express.Router()
 
-router.get('/registeruser', )
+const { RegisterUser } = require('../controllers/userController');
+
+router.post('/registeruser', RegisterUser)
 
 module.exports=router;

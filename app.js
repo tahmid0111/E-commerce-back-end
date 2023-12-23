@@ -9,6 +9,7 @@ const cors=require('cors')
 
 // different routers imported
 const userRouter = require('./src/routes/userRoute');
+const productRouter = require('./src/routes/productRoute')
 
 // using all packages
 app.use(express.json())
@@ -22,6 +23,8 @@ mongoose.connect(url)
 
 // user related router
 app.use('/user/api/v1', userRouter)
+
+app.use('/product/api/v1', productRouter)
 
 
 
