@@ -21,6 +21,11 @@ const DataSchema = mongoose.Schema(
       trim: true,
     },
 
+    Password: {
+      type: String,
+      required: true,
+    },
+
     Phone: {
       Phone1: { type: String, required: true },
       Phone2: { type: String },
