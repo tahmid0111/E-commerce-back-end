@@ -26,7 +26,6 @@ exports.LoginUserService = async (req) => {
     let Query = {Email: reqBody.Email}
 
     try {
-
         let user = await UserModel.findOne(Query)
         if(user) {
 
@@ -49,6 +48,17 @@ exports.LoginUserService = async (req) => {
 
         }
         
+    } catch (error) {
+        return {status: 'fail'}
+    }
+}
+
+exports.ReadUserService = async(req) => {
+    let email = req.headers.email;
+    let Query = {Email: email}
+    try {
+        let result = await UserModel.findOne(Query)
+        return {status: 'success', data: result}
     } catch (error) {
         return {status: 'fail'}
     }
