@@ -63,3 +63,20 @@ exports.ReadUserService = async(req) => {
         return {status: 'fail'}
     }
 }
+
+
+exports.UpdateUserService = async(req) => {
+    let reqBody = req.body;
+    let email = req.headers.email;
+    let Query = {Email: email}
+        // Check if "Email" field is present in reqBody
+        if (reqBody.Email) {
+            return { status: 'email', data: 'Updating Email is not allowed' };
+        }
+    try {
+        let result = await UserModel.updateOne(Query, reqBody)
+        return {status: 'success', data: result}
+    } catch (error) {
+        return {status: 'fail'}
+    }
+}
