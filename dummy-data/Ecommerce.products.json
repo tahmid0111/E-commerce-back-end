@@ -1,0 +1,22 @@
+[
+    {
+    "_id": {
+      "$oid": "64f87d60502e1b80556da15a"
+    },
+    "title": "Apple 15 Inch MacBook Air (2023)",
+    "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "price": "1000",
+    "discount": true,
+    "discountPrice": "890",
+    "image": "https://photo.teamrabbil.com/images/2023/10/03/Apple2.png",
+    "star": "4",
+    "stock": true,
+    "remark": "new",
+    "categoryID": {
+      "$oid": "64f875ed502e1b80556da14d"
+    },
+    "brandID": {
+      "$oid": "64f8751a502e1b80556da142"
+    }
+  }
+]
