@@ -20,7 +20,7 @@ const DataSchema = mongoose.Schema(
             required: true,
         },
         brandID: {
-            type: String
+            type: mongoose.Schema.Types.ObjectId
         }
     },
     {
