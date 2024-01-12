@@ -12,14 +12,15 @@ exports.AllBrand = async (req, res) => {
 }
 
 const mongoose = require('mongoose');
+const sliderModel = require('../models/sliderModel')
 const ObjectId = mongoose.Types.ObjectId;
 
 exports.BrandById = async (req, res) => {
     let id= req.params.id;
-    let Querry = { brandID: new ObjectId(id) };
+    const Query = { $match: { brandID: new ObjectId(id) } };
+
     try {
-        const result = await ProductModel.find(Querry)
-        console.log(result)
+      const result = await ProductModel.aggregate([Query]);
         res.status(200).json({status: 'success', data: result})
 
     } catch (error) {
@@ -30,6 +31,15 @@ exports.BrandById = async (req, res) => {
 exports.AllProducts = async (req, res) => {
     try {
         const result = await ProductModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+    }
+}
+
+exports.AllSliders = async(req, res) => {
+    try {
+        const result = await sliderModel.find()
         res.status(200).json({status: 'success', data: result})
     } catch (error) {
         res.status(404).json({status: 'success', data: 'something went wrong'})

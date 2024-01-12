@@ -27,6 +27,11 @@ const DataSchema = mongoose.Schema(
       Phone1: { type: String, required: true },
       Phone2: { type: String },
     },
+    Image: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     Country: {
       type: String,
       required: true,

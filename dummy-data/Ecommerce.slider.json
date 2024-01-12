@@ -1,0 +1,50 @@
+[
+  {
+  "_id": {
+    "$oid": "64f8895d502e1b80556da15f"
+  },
+  "title": "Winter Festival",
+  "subTitle": "Get 70% OFF",
+  "des": "Don't miss out on the opportunity to make this winter truly special!",
+  "image": "https://images.unsplash.com/photo-1611367540722-9825e219be45?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da159"
+  }
+ },
+  {
+  "_id": {
+    "$oid": "64f8895d502e1b80556da16f"
+  },
+  "title": "Electronic Celebration",
+  "subTitle": "Get 40% OFF",
+  "des": "Don't wait to grab this offer!",
+  "image": "https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da155"
+  }
+ },
+  {
+  "_id": {
+    "$oid": "64f8895d502e1b80556da17f"
+  },
+  "title": "Summer Vacation",
+  "subTitle": "Get 30% OFF",
+  "des": "Don't miss out on the opportunity to make this summer vacation truly special!",
+  "image": "https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da156"
+  }
+ },
+  {
+  "_id": {
+    "$oid": "64f8895d502e1b80556da18f"
+  },
+  "title": "Special Discount",
+  "subTitle": "Get 60% OFF",
+  "des": "Don't miss out on the opportunity to make your life so special!",
+  "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da158"
+  }
+ }
+]
