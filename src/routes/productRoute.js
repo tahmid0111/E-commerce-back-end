@@ -1,11 +1,19 @@
 const express=require('express');
 const router=express.Router()
 
-const { AllBrand, AllProducts, BrandById, AllSliders } = require('../controllers/productController');
+const { AllProducts, AllBrand, BrandById, AllSliders, AllCategory, CategoryByID, ProductByRemark, CreateReview, ReviewByProduct, ProductBySimilar, ProductByKeyword } = require('../controllers/productController');
 
-router.get('/allbrand', AllBrand)
-router.get('/brandbyid/:id', BrandById)
 router.get('/allproducts', AllProducts)
+router.get('/allbrands', AllBrand)
+router.get('/brandbyid/:id', BrandById)
 router.get('/allsliders', AllSliders)
+router.get('/allcategory', AllCategory)
+router.get('/categorybyid/:id', CategoryByID)
+router.get('/productbyremark/:remark', ProductByRemark)
+router.get('/singleproduct/:productid', ProductByRemark)
+router.post('/createreview', CreateReview)
+router.get('/reviewbyproduct/:productid', ReviewByProduct)
+router.get('/productbykeyword/:keyword', ProductByKeyword)
+router.get('/productbysimilar/:categoryid', ProductBySimilar)
 
 module.exports=router;

@@ -1,6 +1,15 @@
 const BrandModel=require('../models/brandModel')
 const ProductModel = require('../models/productModel')
 
+exports.AllProducts = async (req, res) => {
+    try {
+        const result = await ProductModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+    }
+}
+
 exports.AllBrand = async (req, res) => {
     try {
         const result = await BrandModel.find()
@@ -28,14 +37,7 @@ exports.BrandById = async (req, res) => {
     }
 }
 
-exports.AllProducts = async (req, res) => {
-    try {
-        const result = await ProductModel.find()
-        res.status(200).json({status: 'success', data: result})
-    } catch (error) {
-        res.status(404).json({status: 'success', data: 'something went wrong'})
-    }
-}
+
 
 exports.AllSliders = async(req, res) => {
     try {
@@ -43,5 +45,116 @@ exports.AllSliders = async(req, res) => {
         res.status(200).json({status: 'success', data: result})
     } catch (error) {
         res.status(404).json({status: 'success', data: 'something went wrong'})
+    }
+}
+
+exports.AllCategory = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.CategoryByID = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.ProductByRemark = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.CreateReview = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.ReviewByProduct = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.ProductByKeyword = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.ProductBySimilar = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.AllCategory = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.AllCategory = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+exports.AllCategory = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
+    }
+}
+
+
+exports.AllCategory = async (req, res) => {
+    try {
+        const result = await sliderModel.find()
+        res.status(200).json({status: 'success', data: result})
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+
     }
 }
