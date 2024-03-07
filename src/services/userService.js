@@ -13,13 +13,13 @@ exports.RegisterUserService = async (req) => {
     const bangladeshMobileRegex = /^(?:\+?880)?01[3-9]\d{8}$/;
     // Validating given info using regex
     if (!emailRegex.test(reqBody.Email)) {
-      return { status: "wrongEmail" };
+      return { status: "invalidEmail" };
     }
     if (!passwordRegex.test(reqBody.Password)) {
-      return { status: "wrongPass" };
+      return { status: "invalidPass" };
     }
     if (!bangladeshMobileRegex.test(reqBody.Phone)) {
-      return { status: "wrongNumber" };
+      return { status: "invalidNumber" };
     }
     // checking existing user's emails
     let Query = { Email: reqBody.Email };
@@ -36,9 +36,7 @@ exports.RegisterUserService = async (req) => {
 
     let result = await UserModel.create(myBody);
     return { status: "success", data: result };
-
   } catch (error) {
-    console.log(error);
     return { status: "fail" };
   }
 };
@@ -48,24 +46,20 @@ exports.LoginUserService = async (req) => {
     let reqBody = req.body;
     let Query = { Email: reqBody.Email };
     const user = await UserModel.findOne(Query);
-    console.log(user)
-    if (user) {
-      let result = await bcrypt.compare(reqBody.Password, user.Password);
-
-      if (result) {
-        let Payload = {
-          exp: Math.floor(Date.now() / 1000) + 24 * 60 * 60,
-          data: user,
-        };
-        let token = jwt.sign(Payload, "secretkey");
-
-        return { status: "success", data: token };
-
-        // res.json({status: 'login successful', data: token})
-      } else {
-        return { status: "wrong" };
-      }
+    if (!user) {
+      return { status: "newUser" };
     }
+    let result = await bcrypt.compare(reqBody.Password, user.Password);
+    if (!result) {
+      return { status: "wrongPassword" };
+    }
+    let Payload = {
+      exp: Math.floor(Date.now() / 1000) + 24 * 60 * 60,
+      data: user,
+    };
+    let token = jwt.sign(Payload, "secretkey");
+
+    return { status: "success", data: token };
   } catch (error) {
     return { status: "fail" };
   }

@@ -9,28 +9,38 @@ exports.RegisterUser = async (req, res) => {
   let result = await RegisterUserService(req);
 
   if (result.status === "success") {
-    res.status(200).json(result);
+    res.status(200).json({status: result.status, message: "User Successfully Registered", data: result.data});
   }
-  if (result.status === "wrongEmail") {
-    res.status(404).json({ status: "fail email" });
+  if (result.status === "invalidEmail") {
+    res.status(404).json({ status: "Invalid Email", message: "Please provide a valid Email" });
   }
-  if (result.status === "wrongPass") {
-    res.status(404).json({ status: "fail pass" });
+  if (result.status === "invalidPass") {
+    res.status(404).json({ status: "Weak Password", message: "Use a strong Password" });
+  }
+  if (result.status === "invalidNumber") {
+    res.status(404).json({ status: "Wrong Phone Number", message: "Give a bangladeshi Phone Number" });
   }
   if (result.status === "oldUser") {
-    res.status(404).json({ status: "fail user" });
+    res.status(404).json({ status: "Existing User", message: "An account is already registered with this email" });
   }
-  else{
-    res.status(404).json({ status: "something went wrong bby" });
+  if(result.status === "fail") {
+    res.status(404).json({ status: "something went wrong" });
   }
 };
 
 exports.LoginUser = async (req, res) => {
   let result = await LoginUserService(req);
   if (result.status === "success") {
-    res.json({ status: "success", data: result.data });
-  } else if (result.status === "wrong") {
-    res.json({ status: "wrong", data: "invalid username or password" });
+    res.json({ status: result.status, data: result.data });
+  }
+  if (result.status === "newUser") {
+    res.json({
+      status: "New User",
+      data: "There is no account related to this Email",
+    });
+  }
+  if (result.status === "wrongPassword") {
+    res.json({ status: "Invalid", data: "Invalid Email or Password" });
   } else {
     res.status(404).json({ status: "fail", data: "something went wrong" });
   }
@@ -58,8 +68,6 @@ exports.UpdateUser = async (req, res) => {
       .status(404)
       .json({ status: "not allowed", data: "you can not update the email" });
   } else {
-    res
-      .status(404)
-      .json({ status: "fail", data: "something went wrong" });
+    res.status(404).json({ status: "fail", data: "something went wrong" });
   }
 };
