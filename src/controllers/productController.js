@@ -1,5 +1,10 @@
+const mongoose = require('mongoose');
+
+const sliderModel = require('../models/sliderModel')
 const BrandModel=require('../models/brandModel')
 const ProductModel = require('../models/productModel')
+
+const ObjectId = mongoose.Types.ObjectId;
 
 exports.AllProducts = async (req, res) => {
     try {
@@ -20,9 +25,20 @@ exports.AllBrand = async (req, res) => {
     }
 }
 
-const mongoose = require('mongoose');
-const sliderModel = require('../models/sliderModel')
-const ObjectId = mongoose.Types.ObjectId;
+exports.AllBrandSort = async (req, res) => {
+    let sortbyletter = {$sort: {BrandName: 1}}
+    try {
+        const result = await BrandModel.aggregate(
+            [
+                sortbyletter
+            ]
+        )
+        res.status(200).json({status: 'success', data: result})
+
+    } catch (error) {
+        res.status(404).json({status: 'success', data: 'something went wrong'})
+    }
+}
 
 exports.BrandById = async (req, res) => {
     let id= req.params.id;
@@ -36,8 +52,6 @@ exports.BrandById = async (req, res) => {
         res.status(404).json({status: 'success', data: 'something went wrong'})
     }
 }
-
-
 
 exports.AllSliders = async(req, res) => {
     try {

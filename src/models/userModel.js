@@ -1,8 +1,7 @@
 // initial packages
 const mongoose = require("mongoose");
 
-const DataSchema = mongoose.Schema(
-  {
+const DataSchema = mongoose.Schema({
     FirstName: {
       type: String,
       required: true,
@@ -23,9 +22,10 @@ const DataSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    Phone: {
-      Phone1: { type: String, required: true },
-      Phone2: { type: String },
+    Phone: { 
+      type: String, 
+      required: true,
+      unique: true,
     },
     Image: {
       type: String,

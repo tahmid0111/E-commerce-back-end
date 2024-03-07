@@ -11,7 +11,7 @@
     "image": "https://shreethemes.in/cartzio/layouts/assets/images/shop/black-print-t-shirt.jpg",
     "star": "4",
     "stock": true,
-    "remark": "new",
+    "remark": "top",
     "categoryID": {
       "$oid": "64f875ed502e1b80556da150"
     },
