@@ -11,6 +11,10 @@ const DataSchema = mongoose.Schema(
             type: String,
             require: true,
         },
+        shortDes: {
+            type: String,
+            require: true,
+        }
     },
     {
         versionkey: false

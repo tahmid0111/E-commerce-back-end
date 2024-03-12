@@ -1,0 +1,90 @@
+[
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da150"
+        },
+        "categoryName": "Men's Collection",
+        "categoryImg": "https://images.unsplash.com/photo-1610384104075-e05c8cf200c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVuJTIwZmFzaGlvbnxlbnwwfHwwfHx8Mg%3D%3D",
+        "shortDes": "Find your perfect style with our range of clothing and accessories, designed just for him."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da151"
+        },
+        "categoryName": "Women's Collection",
+        "categoryImg": "https://images.unsplash.com/photo-1513094735237-8f2714d57c13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW4lMjBmYXNoaW9ufGVufDB8fDB8fHwy",
+        "shortDes": "Discover the latest trends in fashion for her. Explore our collection of dresses, tops, and more."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da152"
+        },
+        "categoryName": "Kids Poducts",
+        "categoryImg": "https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkcyUyMGZhc2hpb258ZW58MHx8MHx8fDI%3D",
+        "shortDes": "Keep your little ones happy and entertained with a variety of fun and functional items."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da153"
+        },
+        "categoryName": "Mobile",
+        "categoryImg": "https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1vYmlsZXxlbnwwfHwwfHx8Mg%3D%3D",
+        "shortDes": "Stay connected and on-the-go with our selection of smartphones."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da154"
+        },
+        "categoryName": "Laptop",
+        "categoryImg": "https://images.unsplash.com/photo-1545184180-25d471fe75eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWxwdG9wfGVufDB8fDB8fHwy",
+        "shortDes": "Find the perfect laptop for work, school, or entertainment."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da155"
+        },
+        "categoryName": "Head Phones",
+        "categoryImg": "https://images.unsplash.com/photo-1624814448264-f2273a961d33?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhlYWRwaG9uZXxlbnwwfHwwfHx8Mg%3D%3D",
+        "shortDes": "Immerse yourself in your favorite music or podcasts with our high-quality headphones."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da156"
+        },
+        "categoryName": "Sun-glass",
+        "categoryImg": "https://images.unsplash.com/photo-1612291494285-de7586f9b852?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3VuJTIwZ2xhc3N8ZW58MHx8MHx8fDI%3D",
+        "shortDes": "Protect your eyes from the sun's rays in style. Choose from a variety of colors and lenses."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da157"
+        },
+        "categoryName": "Watch",
+        "categoryImg": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2F0Y2h8ZW58MHx8MHx8fDI%3D",
+        "shortDes": "Elevate your style with a timeless watch from our collection."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da158"
+        },
+        "categoryName": "Sports Collection",
+        "categoryImg": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BvcnRzfGVufDB8fDB8fHwy",
+        "shortDes": "Gear up for your next adventure with our wide variety of sports apparel and equipment."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da159"
+        },
+        "categoryName": "Winter Special",
+        "categoryImg": "https://images.unsplash.com/photo-1570654621852-9dd25b76b38d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8OHx8d2ludGVyfGVufDB8fDB8fHwy",
+        "shortDes": "Stay warm and stylish this winter with our collection of cozy clothes and accessories."
+    },
+    {
+        "_id": {
+          "$oid": "64f875ed502e1b80556da256"
+        },
+        "categoryName": "Summer Vacation",
+        "categoryImg": "https://images.unsplash.com/photo-1520322082799-20c1288346e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fHN1bW1lcnxlbnwwfHwwfHx8Mg%3D%3D",
+        "shortDes": "Pack your bags and get ready for fun in the sun with our summer essentials."
+    }
+]

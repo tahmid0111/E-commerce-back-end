@@ -1,5 +1,5 @@
 const UserModel = require("../models/userModel");
-
+// third party packages
 let bcrypt = require("bcrypt");
 let jwt = require("jsonwebtoken");
 // regex for validation

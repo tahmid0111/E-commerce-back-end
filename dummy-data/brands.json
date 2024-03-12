@@ -1,0 +1,82 @@
+[
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da142"
+    },
+    "BrandName": "Apple",
+    "BrandImg": "https://images.unsplash.com/photo-1680266985445-84ee90d29ba8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aSUyMHBob25lJTIwMTQlMjBwcm8lMjBtYXh8ZW58MHx8MHx8fDA%3D",
+    "shortDes": "Innovation leader in technology, offering sleek and user-friendly iPhones, Macs, iPads, and more."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da143"
+    },
+    "BrandName": "Rolex",
+    "BrandImg": "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9sZXglMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
+    "shortDes": "Prestigious symbol of luxury, Rolex watches are crafted with meticulous attention to detail and considered a valuable investment."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da144"
+    },
+    "BrandName": "Raymond",
+    "BrandImg": "https://images.unsplash.com/photo-1574120153654-453fb26e6bd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmF5bW9uZCUyMGRyZXNzfGVufDB8fDB8fHww",
+    "shortDes": "Swiss-made luxury watches, known for their elegance, craftsmanship, and timeless design."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da145"
+    },
+    "BrandName": "Nike",
+    "BrandImg": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D",
+    "shortDes": "World-renowned athletic brand, providing high-performance footwear, apparel, and equipment for all levels."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da146"
+    },
+    "BrandName": "Samsung",
+    "BrandImg": "https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "shortDes": "Major player in consumer electronics, offering a vast range of smartphones, TVs, home appliances, and more."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da147"
+    },
+    "BrandName": "LG",
+    "BrandImg": "https://wallpapers.com/images/high/tv-set-japanese-style-441243o5nvq9kvqx.webp",
+    "shortDes": "Renowned for innovation in technology, LG offers TVs, smartphones, home appliances, and more, known for quality and competitiveness."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da148"
+    },
+    "BrandName": "Bata",
+    "BrandImg": "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "shortDes": "Affordable and reliable footwear brand, providing comfortable and stylish shoes for the whole family."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da149"
+    },
+    "BrandName": "Ray-Ban",
+    "BrandImg": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "shortDes": "Iconic eyewear brand, famous for their classic Wayfarer and Aviator sunglasses, known for quality and style."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da249"
+    },
+    "BrandName": "Adidas",
+    "BrandImg": "https://images.unsplash.com/photo-1511746315387-c4a76990fdce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWRpZGFzfGVufDB8fDB8fHww",
+    "shortDes": "Leading sportswear brand, offering performance-driven footwear, apparel, and equipment for athletes of all kinds."
+  },
+  {
+    "_id": {
+      "$oid": "64f8751a502e1b80556da349"
+    },
+    "BrandName": "Louis Vuitton",
+    "BrandImg": "https://images.unsplash.com/photo-1526743851649-2282229bac05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TG91aXMlMjBWdWl0dG9ufGVufDB8fDB8fHww",
+    "shortDes": "Epitome of luxury fashion, Louis Vuitton offers designer handbags, clothing, accessories, and luggage."
+  }
+]

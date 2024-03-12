@@ -1,34 +1,23 @@
 // initial packages
-const express=require('express');
-const app=express()
-const mongoose=require('mongoose')
-require('dotenv').config()
+const express = require("express");
+const app = express();
+const mongoose = require("mongoose");
+require("dotenv").config();
 
 // extra packages
-const cors=require('cors')
-
+const cors = require("cors");
 // different routers imported
-const userRouter = require('./src/routes/userRoute');
-const productRouter = require('./src/routes/productRoute')
-
+const userRouter = require("./src/routes/userRoute");
+const productRouter = require("./src/routes/productRoute");
 // using all packages
-app.use(express.json())
-app.use(cors())
-
+app.use(express.json());
+app.use(cors());
 // connecting with mongoDB compass
 let url = process.env.url;
-
-mongoose.connect(url)
-
+mongoose.connect(url);
 
 // user related router
-app.use('/user/api/v1', userRouter)
+app.use("/user/api/v1", userRouter);
+app.use("/product/api/v1", productRouter);
 
-app.use('/product/api/v1', productRouter)
-
-
-
-
-
-
-module.exports=app;
+module.exports = app;
